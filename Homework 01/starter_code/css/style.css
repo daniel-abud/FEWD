@@ -1,0 +1,24 @@
+body {
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
+    color: #05080C;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-left: 1;
+    background: #F6F6F6;
+    border-width: 5px;
+    border-top: #222222;
+    border-bottom: #222222;
+}
+
+article img {
+    float: right;
+}
+
+th {
+    background-color: #222222;
+}
+
+td {
+    background-color: #eeeeee;
+}
