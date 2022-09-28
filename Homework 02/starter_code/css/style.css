@@ -30,3 +30,16 @@ p {
 /* body {
   color: ;
 } */
+
+.siteHeader {
+  display: flex;
+  background-color: black;
+  border-bottom-width: 5px;
+  border-bottom-color: #f2ff00;
+  border-bottom-style: solid;
+  padding: 10px;
+}
+
+.siteHeaderLogo {
+  color: #f2ff00;
+}
