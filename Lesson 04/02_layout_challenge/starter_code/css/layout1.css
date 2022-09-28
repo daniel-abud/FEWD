@@ -1,0 +1,22 @@
+
+.exerciseHeader, .exerciseFooter, .exerciseMain {
+    margin: 0 10px 10px 10px;
+}
+
+.exerciseMain {
+    display: flex;
+    gap: 10px
+}
+
+.exerciseMainContent {
+    /* flex-wrap: nowrap; */
+    /* flex-basis: 70%; */
+    width: 60%;
+    /* margin-right: 5px; */
+}
+
+.exerciseMainAside {
+    /* flex-basis: 30%; */
+    width: 40%;
+    /* margin-left: 5px; */
+}
