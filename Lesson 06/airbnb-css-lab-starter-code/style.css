@@ -21,3 +21,124 @@ h1, h2, h3, h4, h5, h6 {
 /* Fitzroy: https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/fitzroy.jpg */
 /* St. Kilda: https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/st-kilda.jpg  */
 /* CBD: https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/central-business-district.jpg */
+
+
+.airbnb-topnav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.airbnb-topnav img {
+  padding: 10px;
+  max-width: 100px;
+}
+
+.airbnb-topnav nav ul {
+  display: flex;
+  list-style: none;
+  gap: 10px;
+  margin: 0px;
+  padding: 0px;
+  margin-right: 10px;
+  /* line-break: normal; */
+}
+
+.airbnb-topnav nav ul a {
+  color: black;
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: 700;
+} 
+
+
+/* Hero */
+ 
+.airbnb-hero {
+  background-image: url(melbourne.jpg);
+  min-height: 500px;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.airbnb-hero-box {
+  color: white;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.airbnb-hero-box h1 {
+  font-size: 60px;
+  text-align: center;
+}
+
+.airbnb-hero-box p {
+  font-size: 16px;
+  text-align: center;
+  font-weight: 700;
+}
+
+
+/* Button */
+
+.airbnb-button {
+  display: inline-block;
+  background-color: #ff5358;
+  color: white;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 15px;
+  text-decoration: none;
+  border-radius: 3px;
+}
+
+.airbnb-button:hover {
+  background:  #e00007;
+}
+
+
+/* Locals */
+
+.airbnb-locals {
+  /* display: flex; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: #efefef;
+  padding: 40px 10px;
+  gap: 40px;
+}
+
+.airbnb-locals-note {
+  background: white;
+  border: 1px solid #dbdbdb;
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  align-items: center;
+}
+
+.airbnb-locals-note h1 {
+  background: #efefef;
+  padding: 10px;
+  font-size: 14px;
+  grid-column: span 2;
+}
+
+/* .airbnb-locals-note p {
+  display: flex;
+  padding: 0px 10px;
+} */
+
+.airbnb-locals-note img {
+  margin: 10px;
+}
+
+
+/* Featured Neighborhoods */
+
