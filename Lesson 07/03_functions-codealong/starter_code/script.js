@@ -1,13 +1,32 @@
 // Let's create 4 functions!
 
+
+// 0. Add 4 to a number
+
+function addFour(inputNumber) {
+    let outputNumber = inputNumber + 4;
+    return outputNumber;
+}
+
+console.log(addFour(4));
+console.log(addFour(-1));
+console.log(addFour(37));
+
+
 // 1. Square of a number
 
 // Create a function called `squared` that takes one argument
 // The function will return the argument times itself (the square of the number)
 
-console.log(squared(2));
-console.log(squared(5));
-console.log(squared(-3));
+function squared(apples){
+    return apples * apples
+}
+
+console.log(squared(2)); /* apples == 2 */
+console.log(squared(5)); /* apples == 5 */
+console.log(squared(-3)); /* apples == -3 */
+
+// console.log(typeof squared)
 
 // BONUS: Check if the argument is a number first! (Hint: conditionals - if statements)
 
@@ -16,8 +35,16 @@ console.log(squared(-3));
 // Create a function called `stringLength` that returns the length of a string (how many characters?)
 // So: stringLength("hello") would return 5
 
+function stringLength(orange){
+    // let newLength = orange.length;
+    // return newLength
+    return orange.length    
+}
+
 console.log(stringLength("testing"))
 console.log(stringLength("This is a longer string."))
+
+
 
 // 3. Add two numbers together
 
