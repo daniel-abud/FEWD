@@ -14,6 +14,7 @@ html, body {
     display: flex;
     color: white;
     font-size: 12px;
+    justify-content:space-between;
 }
 
 .trulia_banner nav {
@@ -91,11 +92,41 @@ html, body {
     padding: 15px;
 }
 
-/* .trulia-grid-item {
-        background-color: white;
-        border-radius: 5px;
-        display: flex;
-        flex-direction: column;
-        height: 260px;
-} */
+.trulia-grid-item {
+    overflow: hidden;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    height: 260px;
+}
 
+.trulia-house-facts {
+    text-decoration: none;
+    list-style: none;
+}
+
+.trulia-house-price {
+    text-decoration: none;
+    list-style: none;
+}
+
+.trulia-house-stats {
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+}
+
+.trulia-house-stats li {
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+}
+
+.trulia-article-icon {
+
+}
+
+.trulia-house-address {
+
+}
