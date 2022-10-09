@@ -5,7 +5,10 @@ Gray: #e8e9ea  / RGBA (232,233,234,1)
 Dark Text: #3b4144 / RGBA (59,65,68,1) */
 
 html, body {
-    font-family: 'Lato', sans-serif;
+    color: #222;
+    font-size: 14px;
+    line-height: 1.4;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 .trulia_banner {
@@ -15,6 +18,7 @@ html, body {
     color: white;
     font-size: 12px;
     justify-content:space-between;
+    height: 40px;
 }
 
 .trulia_banner nav {
@@ -30,9 +34,9 @@ html, body {
 .banner_one ul {
     display: inline-block;
     flex-direction: row;
-    justify-content: flex-start;
+    /* justify-content: flex-start; */
+    justify-content: space-between;
     align-items: center;
-    gap: 10px;
 }
 
 .banner_two ul {
@@ -40,7 +44,8 @@ html, body {
     flex-direction: row-reverse;
     align-items: flex-end;
     text-align: right;    
-    gap: 10px;
+    margin-right: 10px;
+    /* padding: 5px; */
 }
 
 .trulia_banner li {
@@ -53,7 +58,7 @@ html, body {
 
 .banner_item {
     display: flex;
-    gap: 10px;
+    gap: 30px;
     vertical-align: middle;
     text-decoration: none;
     color: white;
@@ -101,32 +106,234 @@ html, body {
     height: 260px;
 }
 
+.trulia-house-image { 
+    background-size: cover;
+    background-position: center center;
+    width: 100%; 
+    height: 160px;
+    position: relative;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+
 .trulia-house-facts {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px 0px 0px 10px;
+    margin: 0px;
+}
+
+.trulia-house-facts ul {
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.trulia-house-facts li {
     text-decoration: none;
     list-style: none;
+    padding: 0px 0px 0px 0px;
+    margin: 0px;
 }
 
 .trulia-house-price {
     text-decoration: none;
     list-style: none;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
 }
 
-.trulia-house-stats {
+.trulia-house-price > * {
+    margin: 0px;
+    padding: 5px 0px 5px 0px;
+    font-size: 16px;
+    /* margin-bottom: 5px; */
+  }
+
+/* .trulia-house-stats {
     display: flex;
     text-decoration: none;
     list-style: none;
-}
+} */
+
+.trulia-house-stats ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4px;
+} 
 
 .trulia-house-stats li {
     display: flex;
     text-decoration: none;
     list-style: none;
+    align-items: center;
+    padding: 0px 10px 0px 0px;
+    gap: 5px;
 }
 
 .trulia-article-icon {
-
+    height: 15px;
 }
 
 .trulia-house-address {
-
+    color: #787d81;
+    font-style:normal;
+    padding: 0px 0px 0px 0px;
+    margin-top: 5px;
 }
+
+.trulia-house-image-1 {
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-1.jpg);
+  }
+  
+  .trulia-house-image-2 {
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-2.jpg);
+  }
+  
+  .trulia-house-image-3 {
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-3.jpg);
+  }
+  
+  .trulia-house-image-4 {
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-4.jpg);
+  }
+  
+  .trulia-house-image-5 {
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-5.jpg);
+  }
+  
+  .trulia-house-image-6 {
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-6.jpg);
+  }
+  
+  .trulia-house-image-7 {
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-7.jpg);
+  }
+  
+  .trulia-house-image-8 {
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-8.jpg);
+  }
+  
+  .trulia-house-image-9 {
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-09.jpg);
+  }
+  
+  .trulia-house-image-10 {
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-10.jpg);
+  }
+  
+  .trulia-house-image-11 {
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-11.jpg);
+  }
+  
+  .trulia-house-image-12 {
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-12.jpg);
+  }
+  
+  .arrow-svg {
+    display:block;
+    height: 15px;
+    margin: 0px 10px;
+    padding: 5px 0px 0px 0px;
+    width: 15px;
+  }
+
+  .new-box {
+    background-color: #20c063;
+    color: white;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    padding: 0px 3px;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    text-transform: uppercase;
+  }
+
+  .by-the-owner {
+    background-color: lightgrey;
+    text-transform: uppercase;
+    /* color: gba(134, 144, 152, 0.45); */
+    color: white;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    /* width: fit-content; */
+    width: 100px;
+    padding: 0px 3px;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
+  .site-results {
+    margin: 25px;
+  }
+
+  .site-results-nav > * {
+    text-align: center;
+    justify-content: center;
+    font-weight: 100;
+    /* margin-bottom: 40px; */
+  }
+
+  .site-pages {
+    justify-content: center;
+    display: flex;
+    gap: 5px;
+    text-decoration: none;
+    list-style: none;
+  }
+
+  .site-pages ul {
+    /* text-align: center; */
+    /* text-decoration: none; */
+    /* color: #20c063; */
+  }
+
+  .site-pages a {
+    text-align: center;
+    list-style: none;
+    text-decoration: none;
+    color: #20c063;
+}
+
+
+  .site-insights {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .site-footer {
+    background-color: #787d81;
+    padding: 5px 0px 5px 0px;
+  }
+
+  .site-footer-links {
+    display: flex;
+    align-items: flex-start;    list-style: none;
+    text-decoration: none;
+    font-size: 10px;
+    gap: 5px;
+    padding-left: 10px;
+    /* flex-direction: column; */
+  }
+
+  .site-footer-links a {
+    text-decoration: none;
+    color: white;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .copyright {
+    justify-content: center;
+    text-align: center;
+    font-size: 8px;
+    color: rgb(204, 201, 201);
+  }
