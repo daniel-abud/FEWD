@@ -130,19 +130,16 @@ header {
 .excited {
  background: green;
  transition: background-color 2s;
-
 }
 
 .happy {
  background: blue;
  transition: background-color 2s;
-
 }
 
 .bad {
  background: black;
  transition: background-color 2s;
-
 }
 
 

@@ -39,3 +39,16 @@ body {
 .stopLight .bulb {
   background-color: red;
 }
+
+
+.stop {
+ background-color: red; 
+}
+
+.slow {
+  background-color: goldenrod;
+}
+
+.go {
+  background-color: green;
+}

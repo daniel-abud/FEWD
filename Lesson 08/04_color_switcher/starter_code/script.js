@@ -17,7 +17,15 @@ whiteBtn.addEventListener('click',setWhiteScheme);
 // Try to do this by setting styles (.style)
 // Remember to try one step at a time, testing each stage as you go!
 
+
+
 const grBtn = document.getElementById('body');
 
 grBtn.style.backgroundColor = "red" ;
 // applies a style to the page, must access style property, then CSS property written in camelCase
+
+
+
+// 1 - target the object
+// 2 - add the event listener
+// 3 - set a behavior for the event
