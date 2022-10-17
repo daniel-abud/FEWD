@@ -20,7 +20,7 @@ let point = 10;
 ballEl.addEventListener('click',
   function(){
     score = score + point; 
-    if(score < 20){
+    if(score < 100){
       scoreEl.innerHTML = score;
     }
     else {
@@ -31,6 +31,7 @@ ballEl.addEventListener('click',
 
 function declareWinner() {
   document.body.classList.add('game-over');
+  scoreEl.innerHTML = score;
 }
 
 
