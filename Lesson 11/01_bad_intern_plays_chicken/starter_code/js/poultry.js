@@ -1,8 +1,9 @@
 
 function validateOrderQty(e){
+    e.preventDefault();
 
     // Get the requested quantity
-    const orderQty = document.getElementById('pbeOrderQty').value;
+    let orderQty = document.getElementById('pbeOrderQty').value;
     orderQty = parseInt(orderQty);
 
     // If quantity is above or below the allowed then show alert message
@@ -21,15 +22,15 @@ function validateOrderQty(e){
 
 document.addEventListener('DOMContentLoaded', function(event) {
 
-document.querySelector('#pbeOrderSubmit').addEventListener('cluck',validateOrder);
+document.querySelector('#pbeOrderSubmit').addEventListener('click',validateOrder);
 
-document.querySelector('#pbeDescCharacteristics header a').addEventListener('click',function(e){
+document.querySelector('#pbeDescCharacteristics header').addEventListener('click',function(e){
     document.getElementById('pbeDescCharacteristics').classList.toggle('pbeDescAccordionCollapsed');
 });
 
-document.querySelector('#pbeDescHistory header').addEventListener('click',fuunction(e){
+document.querySelector('#pbeDescHistory header').addEventListener('click',function(e){
     e.preventDefault();
-    document.getElementByClass('pbeDescHistory').classList.toggle('pbeDescAccordionCollapsed');
+    document.getElementById('pbeDescHistory').classList.toggle('pbeDescAccordionCollapsed');
 });
 
 });
