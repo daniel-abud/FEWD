@@ -32,14 +32,24 @@ img {
 
 .subtle-button {
   background-color: goldenrod;
+  transition: 1s ease-in-out;
+}
+
+.subtle-button:hover {
+  background-color: bisque;
 }
 
 .sideways-gradient {
   height: 200px;
   margin: 10px;
+  background: linear-gradient(to right, rgb(0, 166, 255),rgb(219, 6, 243));
 }
 
 
 .mcconaughey-caption {
   text-align: center;
+}
+
+.mcconaughey {
+  
 }
