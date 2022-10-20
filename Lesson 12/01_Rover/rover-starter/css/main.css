@@ -28,3 +28,243 @@ body {
   width:100%;
   overflow-x:hidden;
 }
+
+.container_fixed {
+  max-width: 1200px;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #06748a;
+}
+
+a:hover {
+  color: #033641;
+}
+
+.site_header_inner {
+  display: flex;
+  margin-top: 20px;
+}
+
+.site_header_inner .logo {
+  margin: 0;
+}
+
+.site_header_inner .burger {
+  display: none;
+}
+
+.site_header img {
+  float: none;
+  max-height: 70px;
+  margin: 0;
+  padding-right: 20px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  font-size: 1.1rem;
+}
+
+.navigation ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.navigation_first {
+  display: flex;
+  padding-left: 20px;
+}
+
+.site_header_inner .sign_up {
+  display: flex;
+  margin-right: 20px;
+}
+
+.navigation_first, .sign_up {
+  list-style-type: none;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #66727c;
+  padding-right: 10px;
+}
+
+.navigation_first {
+  justify-content: flex-start;
+}
+
+
+/* Hero container */
+
+.rover_hero_container {
+  background-image: url(../img/hero.jpg);
+  background-size: cover;
+  overflow: hidden;
+}
+
+.hero_callout {
+  max-width: 500px;
+  margin: 120px 0;
+  padding: 20px;
+  /* background: white; */
+}
+
+.hero_callout .hero_hdr {
+  color: #66727c;
+  font-size: 3rem;
+}
+
+.hero_callout .hero_tagline {
+  color: #66727c;
+  font-size: 2rem;
+  /* max-width: 50%; */
+}
+
+.btn {
+  color: white;
+  text-decoration: none;
+  background-color: #14a96d;
+  font-size: 1.2rem;
+  display: inline-block;
+  padding: 20px 40px;
+  min-width: 180px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background: #1ef29d;
+  color: white;
+}
+
+
+@media (max-width: 1150px) {
+  .hero_callout {
+    background: white;
+  }
+}
+
+@media (max-width: 760px) {
+  .rover_hero_container {
+    background: none;
+  }
+
+  .hero_callout {
+    max-width: 100%;
+    margin: 20px 0;
+  }
+
+  .hero_callout .hero_hdr {
+    display: none;
+  }
+
+  .hero_callout .hero_tagline {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .btn {
+    min-width: 100%;
+  }
+}
+
+
+/* Rover facts */
+
+.rover_middle_section .section_hdr {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.rover_facts_2col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 760px) {
+  .rover_facts_2col {
+    grid-template-columns: 1fr;
+  }
+}
+
+.rover_facts_container ul {
+  margin: 0;
+  padding: 10;
+  list-style: none;
+}
+
+.rover_facts_container ul li {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+}
+
+.rover_facts_container ul li h2 {
+  margin-bottom: 0;
+}
+
+.rover_facts_container ul li p {
+  margin-top: 8px;
+}
+
+.rover_cta_box {
+  border: 1px solid #cfd7de;
+  border-radius: 5px;
+}
+
+.rover_cta_header {
+  background-color: #f4f5f6;
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+}
+
+.rover_cta_header img {
+  max-width: 50px;
+}
+
+.rover_cta_box_content {
+  padding: 20px;
+}
+
+.rover_cta_box_content > *:last-child {
+  margin-bottom: 0;
+}
+
+.rover_cta_box_content .rover_facts {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.rover_cta_box_content .rover_facts li {
+  margin-bottom: 20px;
+}
+
+.rover_cta_box_content .rover_facts li .fas {
+  color: #14a96d;
+}
+
+.rover_cta_box_content .btn {
+  min-width: 100%;
+}
+
+.rover_protections {
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
