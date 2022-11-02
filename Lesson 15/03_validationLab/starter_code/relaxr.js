@@ -5,10 +5,18 @@ function validateSignInForm(e){
     let messages = new Array;
 
     // Get password and validate
-   
+    let password = document.querySelector('#inputPassword3').value;
+    if(password.trim().length < 3){
+        messages.push("Password too short");
+    }
+        
 
     // Get email address and validate
-   
+    let email = document.querySelector('#inputEmail3').value;
+    if(ValidateEmail(email) == false){
+        messages.push("Email not valid");
+    }
+
 
     // If no error messages show submit message
     let outputMessage = "";
